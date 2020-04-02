@@ -1,0 +1,22 @@
+<resources>
+    <string name="home">Գլխավոր</string>
+    <string name="app_name">ExitSheet</string>
+    <string name="name">Անուն, Ազգանուն,Հայրանուն</string>
+    <string name="exit_time">Ելքի ժամը</string>
+    <string name="exit_address">Ելքի հասցե</string>
+    <string name="address_and_name_of_the_place_of_visit">Այցելության վայրի հասցե և անվանում</string>
+    <string name="purpose_of_the_visit">Այցելության նպատակը</string>
+    <string name="expected_return_time">Վերադարձի ակնկալվող ժամը</string>
+    <string name="generate_qr_code">Generate Qr Code</string>
+    <string name="exit_shit_title">Դուրս գալու թերթիկ</string>
+    <string name="settings">Կարգավորումներ</string>
+    <string name="download_pdf">Ներբեռնել pdf</string>
+    <string name="share">Տարածել</string>
+    <string name="sign">Ստորագրել</string>
+    <string name="sign_pdf">Ստորագրություն</string>
+    <string name="select_language">Լեզու</string>
+    <string name="cancel">Չեղարկել</string>
+    <string name="ok">լավ</string>
+    <string name="choose_language">Ընտրեք լեզուն</string>
+    <string name="app_version">Տարբերակը:</string>
+</resources>

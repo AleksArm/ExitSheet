@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/fragment_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="@dimen/_5sdp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_22sdp"
+            android:layout_marginEnd="@dimen/_22sdp">
+
+            <TextView
+                android:id="@+id/title"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/exit_shit_title"
+                android:textSize="17sp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/currentDate"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="25/05/19"/>
+
+
+            <TableLayout
+                android:id="@+id/detailContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/title"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:orientation="vertical"
+                android:weightSum="6">
+
+
+                <TableRow>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/apartmentEditText"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_weight="1"
+                        android:paddingStart="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:textColor="@android:color/black"
+                        android:text="@string/name"
+                        android:textSize="14sp" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/nameEditText"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_text_background"
+                        android:paddingStart="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:textSize="14sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:weightSum="2">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/dateOfBirthAppCompatEditText"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_weight="1"
+                        android:textColor="@android:color/black"
+                        android:paddingStart="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="@string/exit_time"
+                        android:textSize="14sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/exitTimeEditText"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_text_background"
+                        android:paddingStart="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:textSize="14sp" />
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:weightSum="2">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_weight="1"
+                        android:paddingStart="10dp"
+                        android:paddingTop="5dp"
+                        android:textColor="@android:color/black"
+                        android:paddingBottom="5dp"
+                        android:text="@string/exit_address"
+                        android:textSize="14sp" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/editAddressEditText"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_text_background"
+                        android:paddingStart="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:textSize="14sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:weightSum="2">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_weight="1"
+                        android:paddingStart="10dp"
+                        android:paddingTop="5dp"
+                        android:textColor="@android:color/black"
+                        android:paddingBottom="5dp"
+                        android:text="@string/address_and_name_of_the_place_of_visit"
+                        android:textSize="14sp" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/placeEditText"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_text_background"
+                        android:paddingStart="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:textSize="14sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:weightSum="2">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_weight="1"
+                        android:paddingStart="10dp"
+                        android:textColor="@android:color/black"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="@string/purpose_of_the_visit"
+                        android:textSize="14sp" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/purposeEditText"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_text_background"
+                        android:paddingStart="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:textSize="14sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:weightSum="2">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_weight="1"
+                        android:paddingStart="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:textColor="@android:color/black"
+                        android:text="@string/expected_return_time"
+                        android:textSize="14sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/expectedEditText"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_text_background"
+                        android:paddingStart="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:textSize="14sp" />
+                </TableRow>
+
+            </TableLayout>
+
+     <!--       <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/generateQrCode"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_below="@id/detailContainer"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/_130sdp"
+                android:layout_marginTop="@dimen/_35sdp"
+                android:background="@drawable/background"
+                android:drawableStart="@drawable/ic_qr_code"
+                android:gravity="center"
+                android:paddingStart="@dimen/_12sdp"
+                android:paddingEnd="@dimen/_17sdp"
+                android:text="@string/generate_qr_code"
+                android:textColor="@color/white" />-->
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="160dp"
+                android:layout_height="70dp"
+                android:layout_alignParentStart="true"
+                android:id="@+id/signPicture"
+                android:scaleType="fitXY"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:layout_below="@id/detailContainer"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/sign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sign"
+                android:layout_marginStart="@dimen/_33sdp"
+                android:layout_toEndOf="@id/signPicture"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:textSize="25sp"
+                android:textColor="@color/toolbar_gradient_color_2"
+                android:layout_below="@id/detailContainer"/>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sign"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/_45sdp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/downloadPdf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background"
+                    android:drawableStart="@drawable/download"
+                    android:gravity="center"
+                    android:paddingStart="@dimen/_6sdp"
+                    android:paddingEnd="@dimen/_2sdp"
+                    android:text="@string/download_pdf"
+                    android:textColor="@color/white" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background"
+                    android:drawableStart="@drawable/ic_share_white_36dp"
+                    android:gravity="center"
+                    android:paddingStart="@dimen/_6sdp"
+                    android:paddingEnd="@dimen/_2sdp"
+                    android:text="@string/share"
+                    android:textColor="@color/white" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
+

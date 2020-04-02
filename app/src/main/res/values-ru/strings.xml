@@ -1,0 +1,22 @@
+<resources>
+    <string name="home">Главный</string>
+    <string name="app_name">Выходной лист</string>
+    <string name="name">Имя, Фамилия, Oтчество</string>
+    <string name="exit_time">Время выхода</string>
+    <string name="exit_address">Адрес выхода</string>
+    <string name="address_and_name_of_the_place_of_visit">Адрес и название места посещения</string>
+    <string name="purpose_of_the_visit">Цель визита</string>
+    <string name="expected_return_time">Ожидаемое время возвращения</string>
+    <string name="generate_qr_code">Generate Qr Code</string>
+    <string name="exit_shit_title">Выходной лист</string>
+    <string name="settings">Настройки</string>
+    <string name="download_pdf">Скачать Pdf</string>
+    <string name="share">Поделиться</string>
+    <string name="sign">Подписать</string>
+    <string name="sign_pdf">Подпис</string>
+    <string name="select_language">Язык</string>
+    <string name="cancel">Oтменить</string>
+    <string name="ok">Ok</string>
+    <string name="choose_language">Выберите язык</string>
+    <string name="app_version">Версия:</string>
+</resources>
