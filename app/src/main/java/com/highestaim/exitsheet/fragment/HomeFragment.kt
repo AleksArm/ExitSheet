@@ -5,6 +5,7 @@ import android.graphics.BitmapFactory
 import android.os.Bundle
 import android.view.View
 import com.highestaim.exitsheet.Configs
+import com.highestaim.exitsheet.Configs.getFilePath
 import com.highestaim.exitsheet.R
 import com.highestaim.exitsheet.ShitInfo
 import com.highestaim.exitsheet.activity.MainActivity
@@ -103,13 +104,13 @@ class HomeFragment : BaseFragment() {
     private fun setDownloadPdfClickListener() {
         downloadPdf?.setOnClickListener {
             PdfManager((activity as MainActivity).originalContext)
-                .createPdfFile(Configs.getFilePath(context), buildShitInfo())
+                .createPdfFile(getFilePath(context), buildShitInfo())
         }
     }
 
     private fun setOnShareClickListener() {
         share?.setOnClickListener {
-            PdfManager((activity as MainActivity).originalContext).openGeneratedPDF(Configs.getFilePath(context))
+            PdfManager((activity as MainActivity).originalContext).openGeneratedPDF(getFilePath(context))
         }
     }
 

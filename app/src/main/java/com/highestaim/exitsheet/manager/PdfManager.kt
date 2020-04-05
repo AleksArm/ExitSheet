@@ -1,6 +1,5 @@
 package com.highestaim.exitsheet.manager
 
-import android.content.ActivityNotFoundException
 import android.content.Context
 import android.content.Intent
 import android.print.PrintAttributes
@@ -50,8 +49,6 @@ class PdfManager(private val context: Context?) {
 
 
     fun createPdfFile(path: String, info: ShitInfo) {
-        if (File(path).exists())
-            File(path).delete()
         try {
             val document = Document()
 

@@ -13,7 +13,7 @@ object Configs {
         val dir = File(
             context?.getExternalFilesDir(null)?.path
                     + File.separator
-                    + context?.resources?.getString(R.string.app_name)
+                    + "ExitSheet"
                     + File.separator
         )
         if (!dir.exists()) {
@@ -26,7 +26,7 @@ object Configs {
         val dir = File(
             context?.getExternalFilesDir(null)?.path
                     + File.separator
-                    + context?.resources?.getString(R.string.app_name)
+                    + "ExitSheet"
                     + File.separator
         )
         if (!dir.exists()) {

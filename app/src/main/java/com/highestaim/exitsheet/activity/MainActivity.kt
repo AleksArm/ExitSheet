@@ -33,6 +33,5 @@ class MainActivity : AppCompatActivity() {
     override fun attachBaseContext(base: Context) {
         originalContext = base
         super.attachBaseContext(LocaleManager.setLocale(base))
-        // Log.d(TAG, "attachBaseContext");
     }
 }
